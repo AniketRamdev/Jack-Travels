@@ -2,11 +2,77 @@
     padding: 0;
     margin: 0;
 }
-
+.abc{
+    z-index: 1;
+    position: relative;
+}
 .Header{
-    height: 100%;
-    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)) url("Images/banner1.jpg");
+    height: 45rem;
+    
+    background-image: url("Images/banner1.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    position: relative;
+    padding-top: 20px;
+    text-align: center;
+    
+}
+.Header::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-linear-gradient(top,rgba(0,0,0,0.6)60%,black 100%);
+
+}
+.Header img{
+    width: 180px;
+    float: left;
+}
+.login-btn{
+    width: 100px;
+    padding: 8px 0;
+    outline: none !important;
+    border: 2px solid white;
+    border-radius: 50px;
+    background: transparent;
+    color: white;
+    float: right;
+}
+.Header h1{
+    color: white;
+    padding-top: 200px;
+    padding-bottom: 0;
+    font-size: 55px;
+    
+}
+.input-group{
+    width: 90%;
+    max-width: 500px;
+    border-radius: 30px;
+    background: white;
+    margin: auto;
+    padding: 2px;
+    display: inline         ;
+}
+.form-control{
+    border: 0 !important;
+    border-radius: 30px !important;
+    margin: 2px; 
+    box-shadow: none !important ; 
+}
+.input-group-text{
+    width: 100px;
+    background-image: linear-gradient(#00ff7e,#1f3d90);
+    border: 0 !important;
+    color: white !important;
+    padding: 0 25px !important;
+    border-radius: 30px !important;
+    box-shadow: none !important;
+}
+.input-group-append{
+    margin: auto 0;
 }
