@@ -35,7 +35,7 @@ body{
 .Header img{
     width: 60px;
     float: left;
-    margin-left: -20px;
+    margin-left: 20px;
 }
 .login-btn{
     width: 100px;
